@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  #a_mdl{
+    display: none;
+  }
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="<?php echo site_url() ?>assets/css/style.css" rel="stylesheet">
+
+  <!-- <link href="css/animate.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script type="text/javascript" src="<?php echo base_url();?>assets/js/web3.min.js"></script>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+  <!-- header start -->
+  <div class="container-fluid s">
+    <nav class="navbar navbar-inverse navbar1 navbar-inverse1 navbar-fixed-top scrolled">
+      <div class="container">
+        <div class="navbar-header navbar-header1">
+        <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button-->
+      <a class="navbar-brand1" href="<?php echo site_url() ?>"><img src="<?php echo site_url() ?>images/logo_kick.png" class="img-responsive logo1" /></a>       
+    </div>
+    <div class="select-box">
+        <img src="<?php echo site_url() ?>images/flag.jpg" class="img-responsive flag" />
+       <i class="fa fa-caret-down"></i>
+<!--        <div id="google_translate_element"></div><script type="text/javascript">
+       function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,id,it,ja,ko,nl,pt,th,tr,vi,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+  </div>
+  <div class="collapse navbar-collapse in" id="myNavbar">
+       <!--  <ul class="nav navbar-nav nav1 navbar-nav1">
+        <li><a> <i class="fa fa-user"></i> &nbsp test@kindlebit.com &nbsp <i class="fa fa-caret-down"></i> </a></li>
+      </ul> -->
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle hide_back" type="button" data-toggle="dropdown"><span class="test"> test@kindlebit.com &nbsp
+        </span><span class="caret"></span></button>
+        <ul class="dropdown-menu dwn">
+          <li><a href="#">SETTINGS</a></li>
+          <li><a href="<?php echo site_url() ?>logout">LOG OUT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+<style>
+.goog-te-gadget-icon{
+background-image:none!important; background-position:0px!important;
+}
+.goog-te-banner{
+  display:none!important;
+  background-image:none!important;
+}
+.pop{
+  background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-header{
+border-bottom:none!important;
+}
+.modal-content{
+  width:517px!important;
+}
+.payment {
+    padding: 30px;
+}
+.personal-header {
+    color: #2632a9;
+    font-family: Rubik,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.modal-body{
+      margin-top: 0px!important;
+    padding: 0px!important;
+}
+.input-label {
+    color: #aeaeae;
+    font-family: Roboto mono,sans-serif;
+    font-size: 12px;
+}
+.payment .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.payment .row .col-amount {
+    width: 20%;
+}
+.input input {
+    background: #f2f2f2;
+    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.2);
+    border-radius: 4px;
+    border: none;
+    padding: 0 15px;
+    font-family: Roboto mono,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2632a9;
+    height: 40px;
+    width: 87%;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-appearance: none;
+    transition: box-shadow .2s;
+    position: relative;
+}
+.input .errors {
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Rubik,sans-serif;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    height: 2em;
+    top: 100%;
+}
+.payment .row .col-total {
+    width: 74%;
+    padding-top: 19px;
+}
+.payment .fields {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.5ex;
+}
+.payment .fields>div {
+    margin-top: 2px;
+    margin-right: 1.5ex;
+}
+.payment .fields .bunny-price, .payment .fields>div {
+    white-space: nowrap;
+    height: 36px;
+    max-height: 36px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.payment .fields .bunny-price .symbol, .payment .fields>div .symbol {
+    display: block;
+    font-size: 11px;
+    line-height: 12px;
+}
+.payment .fields>div {
+    margin-top: 2px;
+    margin-right: 1.5ex;
+}
+.payment .bonus-amount.active {
+    color: #d32859;
+}
+.payment .fields>div {
+    margin-top: 2px;
+    margin-right: 1.5ex;
+}
+.payment .price, .payment .total-sum {
+    color: #1717a6;
+    font-family: Rubik,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.payment .row .col-full {
+    width: 100%;
+}
+.payment .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.payment .row .col-half {
+    width: 48%;
+}
+.input-label {
+    color: #aeaeae;
+    font-family: Roboto mono,sans-serif;
+    font-size: 12px;
+}
+.payment .value-item {
+    color: #1717a6;
+    font-family: Roboto mono,sans-serif;
+    font-size: 14px;
+}
+.payment .payment-additional-ethereum .double-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.payment .payment-additional-ethereum .double-buttons .button-wrapper {
+    width: 214px;
+    margin-bottom: 0;
+}
+.double-buttons .button-wrapper:first-child {
+    margin: 0 12px 20px 0;
+}
+.button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+.button-wrapper:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 86%;
+    height: 100%;
+    left: 7%;
+    top: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 0 rgba(23,23,166,.5);
+}
+.button-wrapper>.content {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.button.blue {
+    background: #0a2acc radial-gradient(farthest-side at 50% 0,#0a2acc 0,#1717a6 100%);
+}
+.payment .payment-additional-ethereum .double-buttons .button {
+    min-width: 100%;
+}
+.double-buttons .button-wrapper:first-child {
+    margin: 0 12px 20px 0;
+}
+.button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+.payment .payment-additional-ethereum .double-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.alert-success{
+  width: 74px!important;
+    position: relative!important;
+    top: -53px!important;
+    z-index: 7px!important;
+    left: 209px!important;
+    height: 42px!important;
+}
+
+</style>
+<!-- header end -->
+
+
